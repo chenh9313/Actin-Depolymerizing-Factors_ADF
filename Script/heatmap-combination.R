@@ -1,3 +1,6 @@
+#Author: Huan Chen
+#Date: 2024
+
 #! /bin/R
 #load needed library
 library(gridExtra); library(pheatmap)

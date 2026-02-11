@@ -1,3 +1,6 @@
+#Author: Huan Chen
+#Date: 2024
+
 #! /bin/R
 
 rm(list=ls())

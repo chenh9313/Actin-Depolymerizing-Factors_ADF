@@ -1,5 +1,5 @@
-Author: Huan Chen
-Last updated: 12/2023
+#Author: Huan Chen
+#Last updated: 12/2023
 
 #!/bin/bash --login
 ########## Define Resources Needed with SBATCH Lines ##########

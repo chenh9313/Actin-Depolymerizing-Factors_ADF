@@ -30,8 +30,10 @@ REF="path of your Arabidopsis hisat reference file"
 RESULT="path where you want to put your fpkm results"
 PAIRED="path where you want to put your process file"
 
-mkdir -p ~/.ncbi
-echo '/repository/user/main/public/root = "/scratch/standage/sra-cache"' > ~/.ncbi/user-settings.mkfg
+#mkdir -p ~/.ncbi
+#echo '/repository/user/main/public/root = "/scratch/standage/sra-cache"' > ~/.ncbi/user-settings.mkfg
+NCBI_SETTINGS="/dir/sra_cache/$SLURM_ARRAY_TASK_ID"
+mkdir -p "$NCBI_SETTINGS"
 
 time for i in ${SAMPLE[${SLURM_ARRAY_TASK_ID}]};
 do mkdir ${i};
